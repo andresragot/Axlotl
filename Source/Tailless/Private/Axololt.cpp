@@ -10,7 +10,7 @@
 
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "Runtime/Engine/Classes/GameFramework/PlayerController.h"
-#include "Blueprint/WidgetLayoutLibrary.h"
+//#include "Blueprint/WidgetLayoutLibrary.h"
 
 
 // Sets default values
@@ -121,7 +121,7 @@ void AAxololt::Move(const FInputActionValue& _value) {
 
 void AAxololt::Dashing() 
 {	
-	if (!Dash_Disable)
+	if (!DashDisable)
 	{
 		const FVector ForwardDir = this->GetActorForwardVector();
 		LaunchCharacter(ForwardDir * DashDistance, true, false);

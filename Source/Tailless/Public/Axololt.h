@@ -28,7 +28,7 @@ public:
 	UPROPERTY(EditAnyWhere, Category = "Attacks", BlueprintReadWrite) FVector ProjectileDirection;
 	UPROPERTY(EditAnyWhere, Category = "Attacks", BlueprintReadWrite) float AngleProjectile = 0;
 	UPROPERTY(EditAnyWhere, Category = "Attacks", BlueprintReadWrite) FRotator RotatorProjectile;
-	UPROPERTY(EditAnyWhere, Category = "Dash", BlueprintReadWrite) bool Dash_Disable = false;
+	UPROPERTY(EditAnyWhere, Category = "Dash", BlueprintReadWrite) bool DashDisable = false;
 
 
 private:
@@ -92,8 +92,6 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
 	class UInputAction* DashAction;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
-	class UInputAction* LAttackAction;
 
 	APlayerController* PlayerController = NULL;
 };
